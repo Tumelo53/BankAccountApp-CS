@@ -88,6 +88,20 @@ if (answer1 == Thandeka.Pin)
             double transferamount = Convert.ToDouble(Console.ReadLine());      
             Console.WriteLine("Account Name");
             string name3 = Console.ReadLine();
+         if (name3 == "Thandeka")
+        {
+            Console.WriteLine ($"transfer was successfully your current balance is {Kagiso.Transferout(transferamount)}"};
+            Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}");
+        }
+        else if (name2 == "Celiwe")
+        {
+         Console.WriteLine($"Transfer successfully your current balance is {Kagiso.Transferout(transferamount)"}; 
+          Console.WriteLine($"Money was successfully transfered!! {Celiwe.Transferin(transferamount)}");                 
+        }
+        else
+        {
+         Console.WriteLine("invalid account");
+    }
 
         
             Console.WriteLine("Transfer successfully");
@@ -129,6 +143,20 @@ if (answer1 == Thandeka.Pin)
             double transferamount = Convert.ToDouble(Console.ReadLine()); 
             Console.WriteLine("Account Name");
             string name4=Console.ReadLine();
+             if (name2 == "Kagiso")
+        {
+            Console.WriteLine ($"transfer was successfully your current balance is {Celiwe.Transferout(transferamount)"};
+            Console.WriteLine($"Money was successfully transfered!! {Kagiso.Transferin(transferamount)}");
+        }
+        else if (name2 == "Thandeka")
+        {
+         Console.WriteLine($"Transfer successfully your current balance is {Celiwe.Transferout(transferamount)"}; 
+          Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}");                 
+        }
+        else
+        {
+         Console.WriteLine("invalid account");
+    }
 
             
             Console.WriteLine("Transfer successfully");
