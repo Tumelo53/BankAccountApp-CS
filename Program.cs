@@ -13,7 +13,11 @@ Console.WriteLine("Enter Your Pin: ");
 
 int answer1 = Convert.ToInt32(Console.ReadLine());
 
-if (answer1 == Thandeka.Pin)
+if (answer1 == Thandeka.Pin)          
+Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}");  
+Console.WriteLine($"Your new balance is {CheckBalance}");
+
+    
 {
     Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
     string answer2 = Console.ReadLine().ToUpper();
@@ -47,18 +51,20 @@ if (answer1 == Thandeka.Pin)
         if (name2 == "Kagiso")
         {
             Console.WriteLine ($"transfer was successfully your current balance is {Thandeka.Transferout(transferamount)"};
-            Console.WriteLine($"Money was successfully transfered!! {Kagiso.Transferin(transferamount)}");
+            
         }
         else if (name2 == "Celiwe")
         {
          Console.WriteLine($"Transfer successfully your current balance is {Thandeka.Transferout(transferamount)"}; 
-          Console.WriteLine($"Money was successfully transfered!! {Celiwe.Transferin(transferamount)}");                 
+                          
         }
         else
         {
          Console.WriteLine("invalid account");
     }
     else if (answer1 == Kagiso.Pin)
+  Console.WriteLine($"Money was successfully transfered!! {Kagiso.Transferin(transferamount)}");
+
     {
         Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
         string answer3 = Console.ReadLine();
@@ -91,12 +97,11 @@ if (answer1 == Thandeka.Pin)
          if (name3 == "Thandeka")
         {
             Console.WriteLine ($"transfer was successfully your current balance is {Kagiso.Transferout(transferamount)}"};
-            Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}");
+        
         }
         else if (name2 == "Celiwe")
         {
          Console.WriteLine($"Transfer successfully your current balance is {Kagiso.Transferout(transferamount)"}; 
-          Console.WriteLine($"Money was successfully transfered!! {Celiwe.Transferin(transferamount)}");                 
         }
         else
         {
@@ -114,6 +119,8 @@ if (answer1 == Thandeka.Pin)
         Console.WriteLine("Welcome Kagiso your balance is R108 200.00");
     }
     else if (answer1 == Celiwe.Pin)
+    Console.WriteLine($"Money was successfully transfered!! {Celiwe.Transferin(transferamount)}");                 
+
     {
         Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
         string answer4 = Console.ReadLine();
@@ -146,12 +153,10 @@ if (answer1 == Thandeka.Pin)
              if (name4 == "Kagiso")
         {
             Console.WriteLine ($"transfer was successfully your current balance is {Celiwe.Transferout(transferamount)"};
-            Console.WriteLine($"Money was successfully transfered!! {Kagiso.Transferin(transferamount)}");
         }
         else if (name2 == "Thandeka")
         {
          Console.WriteLine($"Transfer successfully your current balance is {Celiwe.Transferout(transferamount)"}; 
-          Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}");                 
         }
         else
         {
