@@ -12,7 +12,6 @@ Console.WriteLine("Buy");
 Console.WriteLine("Enter Your Pin: ");
 
 int answer1 = Convert.ToInt32(Console.ReadLine());
-
 if (answer1 == Thandeka.Pin)
 {
     Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
@@ -45,7 +44,11 @@ if (answer1 == Thandeka.Pin)
 
         Console.WriteLine("Insufficient funds");
     }
-    else if (answer1 == Kagiso.Pin)
+
+
+
+    
+else if (answer1 == Kagiso.Pin)
     {
         Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
         string answer3 = Console.ReadLine();
