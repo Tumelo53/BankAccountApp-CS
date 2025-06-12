@@ -197,7 +197,7 @@ public class BankAccount
     }
     public double Transferout(double amount)
     {
-        if (Balance <= amount)
+        if (Balance >= amount)
         {
             Balance -= amount;
 
