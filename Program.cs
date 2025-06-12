@@ -1,4 +1,4 @@
-﻿﻿using System.Formats.Asn1;
+﻿using System.Formats.Asn1;
 using System.Net.Http.Headers;
 
 BankAccount Thandeka = new BankAccount("thandeka", 2002, 74500);
@@ -17,7 +17,7 @@ if (answer1 == Thandeka.Pin)
 {
     Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
     string answer2 = Console.ReadLine().ToLower();
-    
+
 
     if (answer2 == "Withdraw")
     {
@@ -30,18 +30,13 @@ if (answer1 == Thandeka.Pin)
         }
         else
         { Console.WriteLine($" Declined , online transaction deducted {Thandeka.Withdraw(withamount)}"); }
-        
-        
-
-
-        
-
     }
+    
     else if (answer2 == "deposit")
     {
         Console.WriteLine("Enter the amount");
         double depositamount = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("Deposit succesfully your new amount is"+ Thandeka.Balance+depositamount);
+        Console.WriteLine("Deposit succesfully your new amount is" + Thandeka.Balance + depositamount);
 
     }
     else if (answer2 == "Transfer")
@@ -50,21 +45,21 @@ if (answer1 == Thandeka.Pin)
         double transferamount = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("To which account?");
         string accountHolder = Console.ReadLine().ToLower();
-        if (accountHolder=="Kagiso")
+        if (accountHolder == "Kagiso")
         {
             Console.WriteLine("Transfer successfully, Kagiso's Balance is: R" + Kagiso.Transferin(transferamount));
         }
-        else if(accountHolder=="Celiwe")
+        else if (accountHolder == "Celiwe")
         {
-            Console.WriteLine("Transfer successfully, Celiwe Balance is: R" + Celiwe.Transferin(transferamount));
+            Console.WriteLine("Transfer successfully, Celiwe's Balance is: R" + Celiwe.Transferin(transferamount));
         }
-        
+
         else if (transferamount > Thandeka.Balance)
         {
             Console.WriteLine("Insufficient funds!");
         }
 
-        
+
     }
     else if (answer1 == Kagiso.Pin)
     {
@@ -74,14 +69,27 @@ if (answer1 == Thandeka.Pin)
 
         if (answer3 == "withdrawal")
         {
+
             Console.WriteLine("Enter the amount?");
             double withamount = Convert.ToDouble(Console.ReadLine());
-            //call method
-            Console.WriteLine("Withdrawal successfully");
-            
-            
+
+            if (withamount <= Kagiso.Balance)
+            {
+                Console.WriteLine($" Withdrawal Successfully! your new balance is: {Kagiso.Withdraw(withamount)}");
+            }
+            else if (withamount > Kagiso.Balance)
+            { Console.WriteLine($" Declined , online transaction deducted {Kagiso.Withdraw(withamount)}"); }
+
+
+
+
+
 
         }
+        //call method
+       
+
+
         else if (answer3 == "deposit")
         {
             Console.WriteLine("Enter the amount");
@@ -108,16 +116,26 @@ if (answer1 == Thandeka.Pin)
         string answer4 = Console.ReadLine();
         //cONDITION
 
-        if (answer4 == "withdrawal")
+
+
+        if (answer4 == "Withdraw")
         {
             Console.WriteLine("Enter the amount?");
             double withamount = Convert.ToDouble(Console.ReadLine());
-            //call method
-            Console.WriteLine("withdrawal successfully");
-            
+
+            if (withamount <= Celiwe.Balance)
+            {
+                Console.WriteLine($" Withdrawal Successfully! your new balance is: {Celiwe.Withdraw(withamount)}");
+            }
+            else
+            { Console.WriteLine($" Declined , online transaction deducted {Celiwe.Withdraw(withamount)}"); }
 
         }
-        else if (answer4 == "deposit")
+
+        //call method
+       
+
+    else if (answer4 == "deposit")
         {
             Console.WriteLine("Enter the amount");
             double depositamount = Convert.ToDouble(Console.ReadLine());
@@ -138,13 +156,12 @@ if (answer1 == Thandeka.Pin)
         Console.WriteLine("Welcome Celiwe your balance is R-200.00");
     }
 
-
     else
     {
         Console.WriteLine("invalid pin");
     }
-}
 
+}
 
 
 
