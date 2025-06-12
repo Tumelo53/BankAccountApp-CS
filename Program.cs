@@ -46,7 +46,7 @@ if (answer1 == Thandeka.Pin)
     }
 
 
-
+}
     
 if (answer1 == Kagiso.Pin)
     
