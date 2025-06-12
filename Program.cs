@@ -17,17 +17,17 @@ if (answer1 == Thandeka.Pin)
 {
     Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
     string answer2 = Console.ReadLine();
-    
+
 
     if (answer2 == "Withdraw")
     {
         Console.WriteLine("Enter the amount?");
         double withamount = Convert.ToDouble(Console.ReadLine());
-        
+
         Console.WriteLine($"Withdrawal successfully you current balance is {Thandeka.Withdraw(withamount)}");
 
 
-        
+
 
     }
     else if (answer2 == "deposit")
@@ -45,8 +45,12 @@ if (answer1 == Thandeka.Pin)
 
         Console.WriteLine("Insufficient funds");
     }
-    else if (answer1 == Kagiso.Pin)
-    {
+}
+
+
+if (answer1 == Kagiso.Pin)
+   {
+     {
         Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
         string answer3 = Console.ReadLine();
         //cONDITION
@@ -81,7 +85,11 @@ if (answer1 == Thandeka.Pin)
 
         Console.WriteLine("Welcome Kagiso your balance is R108 200.00");
     }
-    else if (answer1 == Celiwe.Pin)
+
+}
+
+if (answer1 == Celiwe.Pin)
+{
     {
         Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
         string answer4 = Console.ReadLine();
@@ -115,16 +123,17 @@ if (answer1 == Thandeka.Pin)
         }
 
 
-        Console.WriteLine("Welcome Celiwe your balance is R-200.00");
-    }
+        
+
+
 
 
     else
-    {
-        Console.WriteLine("invalid pin");
+        {
+            Console.WriteLine("invalid pin");
+        }
     }
 }
-
 
 
 
@@ -189,3 +198,4 @@ public class BankAccount
         }
     }
 }
+
