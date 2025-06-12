@@ -5,7 +5,7 @@ BankAccount Thandeka = new BankAccount("thandeka", 2002, 74500);
 BankAccount Kagiso = new BankAccount("kagiso", 2004, 108200);
 BankAccount Celiwe = new BankAccount("celiwe", 2154, -200);
 
-Console.WriteLine("Hello User");
+Console.WriteLine("Welcome to Our Bank App");
 //aUTH
 
 
