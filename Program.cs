@@ -189,13 +189,13 @@ public class BankAccount
     {
         return Balance;
     }
-    public double Transferout(double amount)
+    public double Transferin(double amount)
     {
         Balance += amount;
 
         return Balance;
     }
-    public double Transferin(double amount)
+    public double Transferout(double amount)
     {
         if (Balance <= amount)
         {
