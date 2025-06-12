@@ -46,11 +46,13 @@ if (answer1 == Thandeka.Pin)
         string name2 = Console.ReadLine();
         if (name2 == "Kagiso")
         {
-            
+            Console.WriteLine ($"transfer was successfully your current balance is {Thandeka.Transferout(transferamount)"};
+            Console.WriteLine($"Money was successfully transfered!! {Kagiso.Transferin(transferamount)}");
         }
         else if (name2 == "Celiwe")
         {
-            
+         Console.WriteLine($"Transfer successfully your current balance is {Thandeka.Transferout(transferamount)"}; 
+          Console.WriteLine($"Money was successfully transfered!! {Celiwe.Transferin(transferamount)}");                 
         }
         else
         {
@@ -85,7 +87,9 @@ if (answer1 == Thandeka.Pin)
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());      
             Console.WriteLine("Account Name");
-        string name3 = Console.ReadLine();
+            string name3 = Console.ReadLine();
+
+        
             Console.WriteLine("Transfer successfully");
 
             Console.WriteLine("Insufficient funds");
