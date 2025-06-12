@@ -14,7 +14,8 @@ Console.WriteLine("Enter Your Pin: ");
 int answer1 = Convert.ToInt32(Console.ReadLine());
 
 if (answer1 == Thandeka.Pin)          
-Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}");  
+Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}"); 
+//
 Console.WriteLine($"Your new balance is {CheckBalance}");
 
     
