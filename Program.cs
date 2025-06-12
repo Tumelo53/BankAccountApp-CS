@@ -1,6 +1,7 @@
 ﻿using System.Formats.Asn1;
 using System.Net.Http.Headers;
 
+
 BankAccount Thandeka = new BankAccount("thandeka", 2002, 74500);
 BankAccount Kagiso = new BankAccount("kagiso", 2004, 108200);
 BankAccount Celiwe = new BankAccount("celiwe", 2154, -200);
@@ -41,6 +42,22 @@ if (answer1 == Thandeka.Pin)
     {
         Console.WriteLine("Enter the amount");
         double transferamount = Convert.ToDouble(Console.ReadLine());
+        //enter account name
+        if (name2 == "Kagiso")
+        {
+            
+
+        }
+        else if (name2 == "Celiwe")
+        {
+            
+
+        }
+        else
+        {
+         Console.WriteLine("invalid account");
+    }
+
         Console.WriteLine("Transfer successfully");
 
         Console.WriteLine("Insufficient funds");
@@ -76,6 +93,22 @@ if (answer1 == Kagiso.Pin)
         {
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());
+
+
+             if (name2 == "Thandeka")
+        {
+            
+
+        }
+        else if (name2 == "Celiwe")
+        {
+            
+
+        }
+        else
+        {
+         Console.WriteLine("invalid account");
+    }
             Console.WriteLine("Transfer successfully");
 
             Console.WriteLine("Insufficient funds");
@@ -116,6 +149,21 @@ if (answer1 == Celiwe.Pin)
         {
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());
+
+             if (name2 == "Kagiso")
+        {
+            
+
+        }
+        else if (name2 == "Thandeka")
+        {
+            
+
+        }
+        else
+        {
+         Console.WriteLine("invalid account");
+    }
             Console.WriteLine("Transfer successfully");
 
             Console.WriteLine("Insufficient funds");
@@ -198,4 +246,3 @@ public class BankAccount
         }
     }
 }
-
