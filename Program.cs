@@ -16,7 +16,7 @@ int answer1 = Convert.ToInt32(Console.ReadLine());
 if (answer1 == Thandeka.Pin)
 {
     Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
-    string answer2 = Console.ReadLine();
+    string answer2 = Console.ReadLine()ToUpper();
     
 
     if (answer2 == "Withdraw")
@@ -30,14 +30,14 @@ if (answer1 == Thandeka.Pin)
         
 
     }
-    else if (answer2 == "deposit")
+    else if (answer2 == "Deposit")
     {
         Console.WriteLine("Enter the amount");
         double depositamount = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Deposit succesfully");
 
     }
-    else if (answer2 == "transfer")
+    else if (answer2 == "Transfer")
     {
         Console.WriteLine("Enter the amount");
         double transferamount = Convert.ToDouble(Console.ReadLine());
@@ -61,14 +61,14 @@ if (answer1 == Thandeka.Pin)
             
 
         }
-        else if (answer3 == "deposit")
+        else if (answer3 == "Deposit")
         {
             Console.WriteLine("Enter the amount");
             double depositamount = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Deposit succesfully");
 
         }
-        else if (answer3 == "transfer")
+        else if (answer3 == "Transfer")
         {
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());
@@ -97,14 +97,14 @@ if (answer1 == Thandeka.Pin)
             Console.WriteLine("Insufficient funds");
 
         }
-        else if (answer4 == "deposit")
+        else if (answer4 == "Deposit")
         {
             Console.WriteLine("Enter the amount");
             double depositamount = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Deposit succesfully");
 
         }
-        else if (answer4 == "transfer")
+        else if (answer4 == "Transfer")
         {
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());
