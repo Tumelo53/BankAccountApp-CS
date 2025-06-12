@@ -44,13 +44,20 @@ if (answer1 == Thandeka.Pin)
         Console.WriteLine("Deposit succesfully");
 
     }
-    else if (answer2 == "transfer")
+    else if (answer2 == "Transfer")
     {
         Console.WriteLine("Enter the amount");
         double transferamount = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("Transfer successfully");
+        if (transferamount <= Thandeka.Balance)
+        {
+            Console.WriteLine("Transfer successfully, your Balance is"+Thandeka.Transferin(transferamount));
+        }
+        else if (transferamount > Thandeka.Balance)
+        {
+            Console.WriteLine("Insufficient funds!");
+        }
 
-        Console.WriteLine("Insufficient funds");
+        
     }
     else if (answer1 == Kagiso.Pin)
     {
@@ -175,13 +182,13 @@ public class BankAccount
     {
         return Balance;
     }
-    public double Transferout(double amount)
+    public double Transferin(double amount)
     {
         Balance += amount;
 
         return Balance;
     }
-    public double Transferin(double amount)
+    public double Transferout(double amount)
     {
         if (Balance <= amount)
         {
