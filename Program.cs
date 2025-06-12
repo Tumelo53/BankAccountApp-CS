@@ -1,4 +1,4 @@
-﻿using System.Formats.Asn1;
+﻿﻿using System.Formats.Asn1;
 using System.Net.Http.Headers;
 
 BankAccount Thandeka = new BankAccount("thandeka", 2002, 74500);
@@ -16,7 +16,7 @@ int answer1 = Convert.ToInt32(Console.ReadLine());
 if (answer1 == Thandeka.Pin)
 {
     Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
-    string answer2 = Console.ReadLine();
+    string answer2 = Console.ReadLine().ToLower();
     
 
     if (answer2 == "Withdraw")
@@ -41,17 +41,24 @@ if (answer1 == Thandeka.Pin)
     {
         Console.WriteLine("Enter the amount");
         double depositamount = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("Deposit succesfully");
+        Console.WriteLine("Deposit succesfully your new amount is"+ Thandeka.Balance+depositamount);
 
     }
     else if (answer2 == "Transfer")
     {
         Console.WriteLine("Enter the amount");
         double transferamount = Convert.ToDouble(Console.ReadLine());
-        if (transferamount <= Thandeka.Balance)
+        Console.WriteLine("To which account?");
+        string accountHolder = Console.ReadLine().ToLower();
+        if (accountHolder=="Kagiso")
         {
-            Console.WriteLine("Transfer successfully, your Balance is"+Thandeka.Transferin(transferamount));
+            Console.WriteLine("Transfer successfully, Kagiso's Balance is: R" + Kagiso.Transferin(transferamount));
         }
+        else if(accountHolder=="Celiwe")
+        {
+            Console.WriteLine("Transfer successfully, Celiwe Balance is: R" + Celiwe.Transferin(transferamount));
+        }
+        
         else if (transferamount > Thandeka.Balance)
         {
             Console.WriteLine("Insufficient funds!");
