@@ -23,8 +23,15 @@ if (answer1 == Thandeka.Pin)
     {
         Console.WriteLine("Enter the amount?");
         double withamount = Convert.ToDouble(Console.ReadLine());
+
+        if (withamount <= Thandeka.Balance)
+        {
+            Console.WriteLine($" Withdrawal Successfully! your new balance is: {Thandeka.Withdraw(withamount)}");
+        }
+        else
+        { Console.WriteLine($" Declined , online transaction deducted {Thandeka.Withdraw(withamount)}"); }
         
-        Console.WriteLine($"Withdrawal successfully you current balance is {Thandeka.Withdraw(withamount)}");
+        
 
 
         
@@ -57,7 +64,7 @@ if (answer1 == Thandeka.Pin)
             double withamount = Convert.ToDouble(Console.ReadLine());
             //call method
             Console.WriteLine("Withdrawal successfully");
-            ;
+            
             
 
         }
@@ -93,8 +100,7 @@ if (answer1 == Thandeka.Pin)
             double withamount = Convert.ToDouble(Console.ReadLine());
             //call method
             Console.WriteLine("withdrawal successfully");
-            ;
-            Console.WriteLine("Insufficient funds");
+            
 
         }
         else if (answer4 == "deposit")
@@ -160,7 +166,7 @@ public class BankAccount
         }
         else
         {
-            Console.WriteLine(" Declined , online transaction deducted");
+            
       
             return Balance -10;
         }
