@@ -34,9 +34,12 @@ if (answer1 == Thandeka.Pin)
     {
         Console.WriteLine("Enter the amount");
         double depositamount = Convert.ToDouble(Console.ReadLine());
-        balance1=Thandeka.Deposit(depositamount);
-        
-        Console.WriteLine($"Deposit succesfully,your current balance is{balance1}");
+         double balance1=Thandeka.Deposit(depositamount);
+        double balance2=Kagiso.Deposit(depositamount);
+        double balance3=Celiwe.Deposit(depositamount);
+        Console.WriteLine($"Deposit succesfully your current balance is {balance1}");
+        Console.WriteLine($"Deposit successfully your current balance is {balance2}");
+        Console.WriteLine($"Deposit successfully your current balance is {balance3}");
 
     }
     else if (answer2 == "Transfer")
