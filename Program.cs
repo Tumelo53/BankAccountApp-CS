@@ -48,7 +48,8 @@ if (answer1 == Thandeka.Pin)
 
 
     
-else if (answer1 == Kagiso.Pin)
+if (answer1 == Kagiso.Pin)
+    
     {
         Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
         string answer3 = Console.ReadLine();
@@ -84,7 +85,8 @@ else if (answer1 == Kagiso.Pin)
 
         Console.WriteLine("Welcome Kagiso your balance is R108 200.00");
     }
-    else if (answer1 == Celiwe.Pin)
+    
+    if (answer1 == Celiwe.Pin)
     {
         Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
         string answer4 = Console.ReadLine();
