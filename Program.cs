@@ -43,12 +43,12 @@ if (answer1 == Thandeka.Pin)
         Console.WriteLine("Enter the amount");
         double transferamount = Convert.ToDouble(Console.ReadLine());
         //enter account name
-        if (name2 == "Kagiso")
+        if (name3 == "Kagiso")
         {
             
 
         }
-        else if (name2 == "Celiwe")
+        else if (name4 == "Celiwe")
         {
             
 
@@ -100,7 +100,7 @@ if (answer1 == Kagiso.Pin)
             
 
         }
-        else if (name2 == "Celiwe")
+        else if (name4 == "Celiwe")
         {
             
 
@@ -150,7 +150,7 @@ if (answer1 == Celiwe.Pin)
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());
 
-             if (name2 == "Kagiso")
+             if (name3 == "Kagiso")
         {
             
 
