@@ -44,9 +44,17 @@ if (answer1 == Thandeka.Pin)
         double transferamount = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Account Name");
         string name2 = Console.ReadLine();
-        Console.WriteLine("Transfer successfully");
-
-        Console.WriteLine("Insufficient funds");
+        if (name2 == "Kagiso")
+        {
+            
+        }
+        else if (name2 == "Celiwe")
+        {
+            
+        }
+        else
+        {
+         Console.WriteLine("invalid account");
     }
     else if (answer1 == Kagiso.Pin)
     {
