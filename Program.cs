@@ -43,6 +43,7 @@ if (answer1 == Thandeka.Pin)
         Console.WriteLine("Enter the amount");
         double transferamount = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine("Account Name");
+        string name2 = Console.ReadLine();
         Console.WriteLine("Transfer successfully");
 
         Console.WriteLine("Insufficient funds");
@@ -76,7 +77,7 @@ if (answer1 == Thandeka.Pin)
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());      
             Console.WriteLine("Account Name");
-//
+        string name3 = Console.ReadLine();
             Console.WriteLine("Transfer successfully");
 
             Console.WriteLine("Insufficient funds");
@@ -113,8 +114,9 @@ if (answer1 == Thandeka.Pin)
         else if (answer4 == "Transfer")
         {
             Console.WriteLine("Enter the amount");
-            double transferamount = Convert.ToDouble(Console.ReadLine());       
+            double transferamount = Convert.ToDouble(Console.ReadLine()); 
             Console.WriteLine("Account Name");
+            string name4=Console.ReadLine();
 
             
             Console.WriteLine("Transfer successfully");
