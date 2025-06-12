@@ -5,7 +5,7 @@ BankAccount Thandeka = new BankAccount("thandeka", 2002, 74500);
 BankAccount Kagiso = new BankAccount("kagiso", 2004, 108200);
 BankAccount Celiwe = new BankAccount("celiwe", 2154, -200);
 
-Console.WriteLine("Hello User");
+Console.WriteLine("Welcome to our banking app");
 //aUTH
 
 
@@ -143,7 +143,7 @@ if (answer1 == Thandeka.Pin)
             double transferamount = Convert.ToDouble(Console.ReadLine()); 
             Console.WriteLine("Account Name");
             string name4=Console.ReadLine();
-             if (name2 == "Kagiso")
+             if (name4 == "Kagiso")
         {
             Console.WriteLine ($"transfer was successfully your current balance is {Celiwe.Transferout(transferamount)"};
             Console.WriteLine($"Money was successfully transfered!! {Kagiso.Transferin(transferamount)}");
