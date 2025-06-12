@@ -16,7 +16,7 @@ int answer1 = Convert.ToInt32(Console.ReadLine());
 if (answer1 == Thandeka.Pin)
 {
     Console.WriteLine("Do you want to Transfer/Withdraw/Deposit?");
-    string answer2 = Console.ReadLine()ToUpper();
+    string answer2 = Console.ReadLine().ToUpper();
     
 
     if (answer2 == "Withdraw")
