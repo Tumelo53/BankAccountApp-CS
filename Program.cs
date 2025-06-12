@@ -67,7 +67,7 @@ if (answer1 == Kagiso.Pin)
         string answer3 = Console.ReadLine();
         //cONDITION
 
-        if (answer3 == "withdrawal")
+        if (answer3 == "withdraw")
         {
             Console.WriteLine("Enter the amount?");
             double withamount = Convert.ToDouble(Console.ReadLine());
@@ -87,15 +87,29 @@ if (answer1 == Kagiso.Pin)
         {
             Console.WriteLine("Enter the amount");
             double transferamount = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Account Name");
+            string name3 = Console.ReadLine();
+            
+         if (name3 == "Thandeka")
+        {
+            Console.WriteLine($"transfer was successfully your current balance is {Kagiso.Transferout(transferamount)}");
+            Console.WriteLine($"Money was successfully transfered!! {Thandeka.Transferin(transferamount)}");
+        }
+        else if (name3 == "Celiwe")
+        {
+         Console.WriteLine($"Transfer successfully your current balance is {Kagiso.Transferout(transferamount)}"); 
+          Console.WriteLine($"Money was successfully transfered!! {Celiwe.Transferin(transferamount)}");                 
+        }
+        else
+        {
+         Console.WriteLine("invalid account");
+    }
 
-            Console.WriteLine("Transfer successfully");
-
-            Console.WriteLine("Insufficient funds");
 
         }
 
 
-        Console.WriteLine("Welcome Kagiso your balance is R108 200.00");
+        
     }
 
 if (answer1 == Celiwe.Pin)
