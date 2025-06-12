@@ -35,17 +35,14 @@ if (answer1 == Thandeka.Pin)
         Console.WriteLine("Enter the amount");
         double depositamount = Convert.ToDouble(Console.ReadLine());
          double balance1=Thandeka.Deposit(depositamount);
-        double balance2=Kagiso.Deposit(depositamount);
-        double balance3=Celiwe.Deposit(depositamount);
         Console.WriteLine($"Deposit succesfully your current balance is {balance1}");
-        Console.WriteLine($"Deposit successfully your current balance is {balance2}");
-        Console.WriteLine($"Deposit successfully your current balance is {balance3}");
 
     }
     else if (answer2 == "Transfer")
     {
         Console.WriteLine("Enter the amount");
         double transferamount = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Account Name");
         Console.WriteLine("Transfer successfully");
 
         Console.WriteLine("Insufficient funds");
@@ -68,15 +65,18 @@ if (answer1 == Thandeka.Pin)
         }
         else if (answer3 == "Deposit")
         {
-            Console.WriteLine("Enter the amount");
-            double depositamount = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Deposit succesfully");
+        Console.WriteLine("Enter the amount");
+        double depositamount = Convert.ToDouble(Console.ReadLine());
+        double balance2=Kagiso.Deposit(depositamount);         
+        Console.WriteLine($"Deposit successfully your current balance is {balance2}");
+
 
         }
         else if (answer3 == "Transfer")
-        {
             Console.WriteLine("Enter the amount");
-            double transferamount = Convert.ToDouble(Console.ReadLine());
+            double transferamount = Convert.ToDouble(Console.ReadLine());      
+            Console.WriteLine("Account Name");
+//
             Console.WriteLine("Transfer successfully");
 
             Console.WriteLine("Insufficient funds");
@@ -105,14 +105,18 @@ if (answer1 == Thandeka.Pin)
         else if (answer4 == "Deposit")
         {
             Console.WriteLine("Enter the amount");
-            double depositamount = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Deposit succesfully");
+            double depositamount = Convert.ToDouble(Console.ReadLine());        
+            Console.WriteLine($"Deposit successfully your current balance is {balance3}");
+
 
         }
         else if (answer4 == "Transfer")
         {
             Console.WriteLine("Enter the amount");
-            double transferamount = Convert.ToDouble(Console.ReadLine());
+            double transferamount = Convert.ToDouble(Console.ReadLine());       
+            Console.WriteLine("Account Name");
+
+            
             Console.WriteLine("Transfer successfully");
 
             Console.WriteLine("Insufficient funds");
