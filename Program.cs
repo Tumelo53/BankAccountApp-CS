@@ -9,7 +9,7 @@ Console.WriteLine("Hello User");
 //aUTH
 
 
-Console.WriteLine("Enter Your Pin: ");
+Console.WriteLine("Enter Your : ");
 
 int answer1 = Convert.ToInt32(Console.ReadLine());
 
